@@ -1,5 +1,5 @@
 #Lotto Jenny v0.0.1
-2015.JAN.11: 11:33am
+2015.JAN.12: 1:08am
 Lottery Number Generator
 
 ###Stack Technologies
