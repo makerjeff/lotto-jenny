@@ -1,0 +1,36 @@
+<!-- partial-home-videos.html -->
+<!-- partials don't need HTML5 boiler tags -->
+<!-- controller for ng-repeat defined in the state section (core.JS) -->
+
+<div>
+    <div class="col-sm-4" ng-repeat="video in videos">
+
+        <p>
+
+            <b>{{video.title | uppercase}}</b> <br>
+            <img ng-src="{{video.thumbnail}}" width="{{video.width / 2}}"><br>
+            <i>{{video.description}}</i> <br>
+            <span>video size: {{video.width}} x {{video.height}}</span> <br>
+            <!-- Use ng-href the same reason why you'd use ng-src for images -->
+            <!-- Prevents users from clicking a link that angular hasn't parsed the page yet. -->
+            <a ng-href="{{video.url}}" target="_blank"> view video </a>
+        </p>
+
+
+
+
+        <!--title: {{video.title}} <br>-->
+        <!--description: {{video.description}}<br>-->
+        <!--url: {{video.url}}<br>-->
+        <!--thumb: {{video.thumbnail}}<br>-->
+        <!--width: {{video.width}}<br>-->
+        <!--height: {{video.height}}<br>-->
+    </div>
+</div>
+
+
+
+<!-- TWITTER BOX -->
+<a class="twitter-timeline" href="https://twitter.com/MakerJeffWu" data-widget-id="685277929421447168">Tweets by @MakerJeffWu</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- TWITTER BOX END-->

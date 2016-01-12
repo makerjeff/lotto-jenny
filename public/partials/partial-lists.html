@@ -1,0 +1,23 @@
+<!-- partial-lists.html -->
+<!-- refer to sub-views using 'ui-view="<name of view>"'-->
+<!-- in core.js route definitions, sub-views are defined in a 'views' object in teh states definition-->
+<!-- sub-views are defined with '<subviewName>@<state> {<object>}'-->
+
+<!-- partials don't need HTML5 boiler tags -->
+<!-- controller for ng-repeat defined in the state section (core.JS) -->
+
+<div class="jumbotron text-center">
+    <h1> The Page o' Lists</h1>
+    <p>This page can house <span class="text-primary">lists of stats</span>, <span class="text-danger">old periscopes</span>, etc</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div ui-view="columnOne"></div>
+    </div>
+
+    <div class="col-sm-6">
+        <div ui-view="columnTwo"></div>
+    </div>
+</div>
+

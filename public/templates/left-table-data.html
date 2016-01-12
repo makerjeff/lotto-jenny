@@ -1,0 +1,21 @@
+<!-- LEFT TABLE DATA -->
+<!-- templates don't need HTML5 boiler tags -->
+<!-- controller for ng-repeat defined in the state section (core.JS) -->
+
+<h2>Automobiles</h2>
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>HP</th>
+        <th>TQ</th>
+    </tr>
+
+    <tr ng-repeat="car in cars">
+        <td> {{car.model}}</td>
+        <td> {{car.price}}</td>
+        <td>{{car.hp}}</td>
+        <td>{{car.tq}}</td>
+    </tr>
+</table>

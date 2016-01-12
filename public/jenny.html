@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LottoJenny</title>
+</head>
+<body>
+    <h1>LottoJenny</h1>
+    <div id="results"></div>
+
+<script>
+
+    //global variables
+
+    whiteBalls = [];
+    redBalls = [];
+
+
+    // == FUNCTIONS ==
+    function randomInteger (iter, max) {
+        for(var i = 0; i < iter; i++) {
+
+            var num = Math.ceil(Math.random() * max);
+            whiteBalls.push(num);
+            console.log(num);
+        }
+    }
+
+    //learned from: https://dreaminginjavascript.wordpress.com/2008/08/22/eliminating-duplicates/
+    function eliminateDuplicates(array) {
+        var i;
+        var len = array.length;
+        var out = [];
+        var obj = {};
+
+        for (i=0; i < len; i++) {
+            obj[array[i]] = 0;
+        }
+
+        for(i in obj) {
+            out.push(i);
+        }
+    }
+
+    /**
+     *
+     * @param array
+     * @returns {*}
+     */
+    function checkForDuplicate(array) {
+        var sortArray = array.sort(function(a,b) {return a>b});
+        console.log(sortArray);
+        var output = [];
+
+        for(var i = 0; i < array.length - 1; i++) {
+            //if next number in the sorted array is the same
+            if(sortArray[i + 1] == sortArray[i]) {
+                output.push(sortArray[i]);
+            }
+        }
+        return output[];
+    }
+
+
+    // randomizer
+    function jeffRandomInt(max){
+        var num = Math.ceil(Math.random() * max);
+        console.log(num);
+        return num;
+    }
+
+    function updateResults(input) {
+        var resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = input;
+    }
+
+
+
+</script>
+
+</body>
+</html>

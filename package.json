@@ -1,0 +1,15 @@
+{
+  "name":"lotto-jenny",
+  "description":"Lottery number generator website",
+  "version":"0.0.1",
+  "private":"true",
+  "dependencies": {
+    "express":"^4.13.3",
+    "angular":"^1.4.8",
+    "angular-ui-router":"^0.2.15",
+    "mongoose":"^4.3.4",
+    "colors":"^1.1.2",
+    "body-parser": "^1.14.2",
+    "serve-favicon":"latest"
+  }
+}
